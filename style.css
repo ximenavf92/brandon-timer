@@ -1,32 +1,68 @@
-.container {
+:root {
+  --breakBackground: #1d408e;
+  --workingBackground: #131313;
+}
+
+body {
   background-color: #355068;
+  background-color: var(--breakBackground);
+  transition: ease-in-out 1s;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 95vw;
+  height: 75vh;
+}
+
+:active,
+:focus {
+  outline-color: #E7B65A;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Acme', sans-serif;
+  font-size: 6em;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  /* background-color: #355068; */
   display:flex;
   justify-content: center;
   align-items: center;
-  height:75px;
-  width:360px;
+  /* height:95px; */
+  width:350px;
+  padding: 1.25em .75em;
   border:8px solid #d5d5ce;
 }
 
 #tomato {
   font-size: 50px;
   position: relative;
-  bottom: 5px;
+  /* bottom: 5px; */
+  top: 2px;
   background:transparent;
+  padding-right: .2em;
 }
 
 #countdown {
   text-align: center;
   font-size: 50px;
-  font-family: "Glacial Indifference";
+  font-family: 'Acme', sans-serif;
   font-weight: 600;
+  letter-spacing: .025em;
   color: white;
   margin-left: 10px;
   margin-right: 20px;
 }
 
 button {
-  background-color: #355068;
+  /* background-color: #355068; */
+  background-color: transparent;
   border: 0;
   padding-left: 0px;
   padding-right: 0px;
