@@ -4,34 +4,42 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/tomato_1f345.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <title>Pomodoro Timer</title>
 
 </head>
 <body>
   <script src="countdown.js"></script>
 
-  <div class="container">
-      <button id="tomato" type="button" onclick="updateDuration()">
-        🍅
-      </button>
-
-    <div id="countdown">50:00</div>
-    
-    <div class="buttons">
-      <button type="button" onclick="playPauseCountdown()">
-        <div class="imageContainer">
-          <img id="playPause" src="playButton4x.png">
-        </div>
-      </button>
-      <button type="button" onclick="restartCountdown()">
-        <div class="imageContainer" id="resetButton">
-          <img src="resetButton4x.png">
-        </div>
-      </button>
+ <main>
+    <!-- <h1 id="pomTimerHeading">It's Pomodoro Time!</h1> -->
+    <h1 id="pomTimerHeading">Pom Time!</h1>
+  
+    <div class="container">
+        <button id="tomato" type="button" onclick="updateDuration()">
+          🍅
+        </button>
+  
+      <div id="countdown">25:00</div>
+      
+      <div class="buttons">
+        <button type="button" onclick="playPauseCountdown()">
+          <div class="imageContainer">
+            <img id="playPause" src="playButton4x.png">
+          </div>
+        </button>
+        <button type="button" onclick="restartCountdown()">
+          <div class="imageContainer" id="resetButton">
+            <img src="resetButton4x.png">
+          </div>
+        </button>
+      </div>
+  
+      <audio id="yoScottAudio">
+        <source src="YoScott.m4a" type="audio/mpeg">
+      </audio>
     </div>
-
-    <audio id="yoScottAudio">
-      <source src="YoScott.m4a" type="audio/mpeg">
-    </audio>
-  </div>
+ </main>
 </body>
 </html>
