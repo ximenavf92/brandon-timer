@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="brandon.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <title>Brandon Timer</title>
+
+  <style>
+  .brandon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: solid 3px white;
+  }
+
+  :root {
+  --breakBackground: hsl(213, 68%, 15%);
+  --workingBackground: hsl(213, 68%, 5%);
+}
+  </style>
+
+</head>
+<body>
+  <script src="brandon-countdown.js"></script>
+
+ <main>
+    <!-- <h1 id="pomTimerHeading">It's Pomodoro Time!</h1> -->
+    <h1 id="pomTimerHeading">Where is Brandon?</h1>
+  
+    <div class="container">
+        <button id="tomato" type="button" onclick="updateDuration()">
+          <img src="brandon.jpg" alt="" class="brandon">
+        </button>
+  
+      <div id="countdown">25:00</div>
+      
+      <div class="buttons">
+        <button type="button" onclick="playPauseCountdown()">
+          <div class="imageContainer">
+            <img id="playPause" src="playButton4x.png">
+          </div>
+        </button>
+        <button type="button" onclick="restartCountdown()">
+          <div class="imageContainer" id="resetButton">
+            <img src="resetButton4x.png">
+          </div>
+        </button>
+      </div>
+  
+      <audio id="yoScottAudio">
+        <source src="YoScott.m4a" type="audio/mpeg">
+      </audio>
+    </div>
+ </main>
+</body>
+</html>
